@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+   <link rel="icon" type="image/png" href="assets/check.png">
+   <title>Gerenciador de Tarefas</title>
+</head>
+<body>
+   <div class="container">
+      <h1>Gerenciador de Tarefas</h1>
+      <button class="btn" id="openModal">Adicionar Tarefa</button>
+      <div class="grid" id="dataGrid"></div>
+   </div>
+   
+   <div class="modal" id="modal-form">
+      <div class="modal-content">
+         <span class="close" id="closeModal">&times;</span>
+         <h2 id="modalTitle">Adicionar Tarefa</h2>
+         <input type="text" id="taskTitle" placeholder="Título da tarefa">
+         <input type="text" id="taskCreator" placeholder="Criador da tarefa">
+         <input type="text" id="taskDescription" placeholder="Descrição da tarefa">
+         <input type="text" id="taskExecutor" placeholder="Executor da tarefa">
+         <button class="btn" id="saveItem">Salvar</button>
+      </div>
+   </div>
+
+   <div class="modal" id="modal-notification">
+      <div class="modal-content">
+         <span class="close" id="closeModalNotification">&times;</span>
+         <h2 id="modalTitleNotification"></h2>
+      </div>
+   </div>
+
+   <div id="loading-container" class="loading">
+      <img src="assets/loading_gif.gif" alt="loading gif">
+   </div>
+   
+   <script src="index.js"></script>
+</body>
+</html>
